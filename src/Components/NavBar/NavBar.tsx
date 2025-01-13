@@ -9,8 +9,10 @@ const NavBar: React.FC = () => {
     // List of navigation items
     const navItems = [
         { name: "Home", href: "/" },
-        { name: "Contact", href: "#" },
         { name: "About", href: "#" },
+        { name: "Shop", href: "/Shop" },
+        { name: "Contact", href: "#" },
+       
     ];
 
     const toggleMenu = () => {
