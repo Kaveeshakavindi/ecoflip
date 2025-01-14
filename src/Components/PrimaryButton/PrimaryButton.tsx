@@ -8,7 +8,7 @@ interface PrimaryButtonProps {
 }
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({ name, onClick }) => {
     return (
-        <button className='flex items-center justify-center bg-green-500 rounded-full text-white px-4 py-2 my-2 group'
+        <button className='flex items-center justify-center bg-green-500 rounded-full text-white px-4 py-2 my-2 group hover:bg-green-600 transition ease-in-out'
             onClick={onClick}
         >
             <div className='pr-2'>{name}</div>
