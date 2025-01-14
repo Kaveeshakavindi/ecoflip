@@ -57,8 +57,8 @@ const LineChart: React.FC<LineChartProps> = ({ name, data }) => {
   ];
 
   return (
-    <div className="w-11/12 bg-white p-6 rounded-lg">
-      <h2 className="text-sm text-center mb-4">
+    <div className="w-11/12 bg-transparent p-6 rounded-lg">
+      <h2 className="text-sm text-center mb-4 font-semibold">
         {name}
       </h2>
       <Chart options={chartOptions} series={chartSeries} type="area" height={350} />
