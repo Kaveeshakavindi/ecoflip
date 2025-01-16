@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImg from '../../assets/hero4.jpg'
+import bgImg from '../../assets/hero2.jpg'
 import { useNavigate } from 'react-router-dom'
 import PrimaryButton from '../../Components/PrimaryButton/PrimaryButton'
 import LineChart from '../../Components/LineChart/Linechart'
@@ -16,9 +16,9 @@ const Home: React.FC = () => {
     }
     return (
         <div className='grid grid-cols-[40%,60%] w-full h-screen bg-cover pt-20'
-            //style={{ backgroundImage: `url(${bgImg})` }}
+            style={{ backgroundImage: `url(${bgImg})` }}
             >
-            <video
+            {/* <video
                 className="absolute top-[5rem] left-0 w-full h-full object-cover z-[-1]"
                 autoPlay
                 muted
@@ -26,8 +26,8 @@ const Home: React.FC = () => {
             >
                 <source src={heroVid} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
-            <div className='grid grid-cols-1 divide-y bg-black/30 items-center m-4 rounded-xl p-4 backdrop-blur'>
+            </video> */}
+            <div className='grid grid-cols-1 divide-y bg-white items-center m-4 rounded-xl p-4 backdrop-blur'>
                 <div className='text-5xl text-black' >
                     Reclaiming Style, Restoring Earth-<span className='text-green-500'>Thrift.</span>
                 </div>
@@ -48,7 +48,7 @@ const Home: React.FC = () => {
                 <div className='text-black text-xl uppercase '>
                     A Fresh Look Without a Fresh Scar on the Earth.
                 </div>
-                <div className="flex flex-wrap gap-4 justify-center items-start bg-black/30 backdrop-blur rounded-xl p-4 h-[40%] w-full">
+                <div className="flex flex-wrap gap-4 justify-center items-start bg-white backdrop-blur rounded-xl p-4 h-[40%] w-full">
                     <ShopCard name='White top' />
                     <ShopCard name='White top' />
                     <ShopCard name='White top' />
